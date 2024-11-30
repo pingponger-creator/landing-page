@@ -1,7 +1,6 @@
 body{
 
 height: 100vh;
-min-width: 100vw;
 
 }
 
@@ -15,12 +14,20 @@ min-width: 100vw;
 
 /* Section-one */
 
+.header{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+   
+}
+
 .section-one-container{
     height: 400px;
     background-color: #A67B5B;
     color: 	#ffffff;
     display: flex;
     justify-content: center;
+    min-width: 900px;
 }
 
 .section-one{
@@ -28,7 +35,8 @@ min-width: 100vw;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 10px;
-    min-width: 300px; /* min-width ensures that it can flex, better responsiveness for smaller screens, need to learn more, when to use min and max for widths and heights*/
+    min-width: 300px; 
+    /* min-width ensures that it can flex, better responsiveness for smaller screens, need to learn more, when to use min and max for widths and heights*/
     
 }
 
@@ -40,24 +48,25 @@ min-width: 100vw;
 }
 .section-one-top-links{
     display: flex;
-    min-width: 300px;
-    justify-content: space-around;
+    min-width: 600px;
+    justify-content: space-evenly;
     font-size: 18px ;
-    font-variant: small-caps;
-    margin: 5px;
+    font-variant: all-small-caps;
+    margin: 13px;
 
 }
 
 .header-title{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
     font-variant: small-caps;
+    margin-top:3px;
 }
 
 .section-one-bottom {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 
 }
 
@@ -97,6 +106,88 @@ min-width: 100vw;
 
 /* Section-two */
 
+.section-two-container{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    min-width: 900px;
+}
+
+.section-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+
+    
+}
+
+.items
+{
+    display: flex;
+    gap: 50px;
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.item-1-top,
+.item-2-top,
+.item-3-top,
+.item-4-top {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+.item-1-top{
+    background-color: #d7a96e;
+}
+
+.item-2-top{
+    background-color: #AD9277;
+}
+
+.item-3-top {
+
+    background-color: #BCADA3;
+}
+
+.item-4-top{
+    background-color: #4E2F2E
+}
+
+
+.item-1-bottom,
+.item-2-bottom,
+.item-3-bottom,
+.item-4-bottom {
+
+    font-size: 16px;
+    font-weight: 500;
+    font-variant: all-small-caps;
+
+}
+
+
+.info 
+{
+    margin-top: 40px;
+    font-size: 28px;
+    font-variant: all-small-caps;
+    font-weight: 600;
+    font-stretch: condensed;
+}
+
 
 
 /* Section-three */
@@ -107,6 +198,7 @@ min-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 900px;
 }
 
 .section-three {
@@ -128,6 +220,7 @@ min-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 900px;
 
 }
 
@@ -155,6 +248,8 @@ min-width: 100vw;
     justify-content: flex-end;
     font-style: normal;
     color: #000000;
+    font-variant: all-small-caps;
+    font-stretch: condensed;
 }
 
 .quote{
@@ -170,19 +265,26 @@ min-width: 100vw;
     color: 	#ffffff;
     font-weight: 600;
     display: flex;
+    justify-content: center;
+    min-width: 900px;
 }
 
 .copyright {
     display: flex;
-    width: 100vw;   /* make sure for later */
+    /* min-width: 900px;   */
+    /* make sure for later */
     justify-content: center;
     align-items: center;
     font-size: 14px;
     
 }
 
+/* button */
 
-/* Button */
+button:hover{
+    background-color: #f6f6f6;
+    color: #000000;
+}
 
 button{
     background-color:#6F4E37;
@@ -195,17 +297,7 @@ button{
     padding-right: 30px;
     border-radius: 10px;
     font-size: 15px;
-    font-variant: small-caps;
-}
-
-/* Image */
-
-
-img {
-    width: 300px;
-    height: 200px;
-    border-radius: 15px;
-    border: 2px solid rgb(240, 240, 240);
+    font-variant: all-small-caps;
 }
 
 
@@ -213,10 +305,10 @@ img {
 /* Highlighted for Future */
 
 
-
+/* 
 div{
     border: 1px solid red;
-}
+} */
 
 
 /* 
@@ -225,4 +317,3 @@ div{
     height: 200px;
 
 } */
-
