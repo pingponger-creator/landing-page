@@ -260,7 +260,13 @@ height: 100vh;
 
 /* Footer */
 .footer{
-    height: 50px;;
+
+    /* height was set to 50px before, this caused to have space at the bottom of the page in mobile potrait view */
+
+    max-height: 50px; 
+
+    /* Testing max-height */
+    
     background-color: #A67B5B;
     color: 	#ffffff;
     font-weight: 600;
